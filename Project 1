@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jenkins Remoting Project">
+    <title>Jenkins Remoting Project</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet (optional) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em 2em;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .content-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Jenkins Remoting Project</h1>
+        <p>Connecting Jenkins agents and master with efficient remoting capabilities</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#documentation">Documentation</a>
+        <a href="#installation">Installation</a>
+        <a href="#contribute">Contribute</a>
+    </nav>
+
+    <!-- Main Content -->
+    <section id="overview">
+        <div class="content-container">
+            <h2>Project Overview</h2>
+            <p>
+                Jenkins Remoting is a Java-based library that enables the communication between Jenkins controllers and agents. 
+                It provides a protocol for transferring data, managing job execution, and handling remote access for distributed builds.
+            </p>
+            <ul>
+                <li><strong>Efficient Communication:</strong> Optimized for low-latency, high-throughput communication.</li>
+                <li><strong>Secure Data Transfer:</strong> Utilizes secure channels to ensure data integrity.</li>
+                <li><strong>Cross-Platform Support:</strong> Compatible with various platforms like Linux, Windows, and macOS.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="documentation">
+        <div class="content-container">
+            <h2>Documentation</h2>
+            <p>For detailed information about the Jenkins Remoting project, please visit the official documentation:</p>
+            <ul>
+                <li><a href="https://www.jenkins.io/project/jenkins-remoting/" target="_blank">Jenkins Remoting Official Documentation</a></li>
+                <li><a href="https://github.com/jenkinsci/remoting" target="_blank">GitHub Repository</a></li>
+                <li><a href="https://www.jenkins.io/doc/" target="_blank">Jenkins Documentation</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="installation">
+        <div class="content-container">
+            <h2>Installation Guide</h2>
+            <p>Follow the instructions below to install Jenkins Remoting on your machine:</p>
+            <ul>
+                <li>Ensure you have a running Jenkins instance (either controller or agent).</li>
+                <li>Download the latest remoting.jar from the Jenkins remoting GitHub releases page.</li>
+                <li>Run the following command to start the remoting agent:</li>
+                <pre>java -jar remoting.jar -jnlpUrl <your-jenkins-master-url>/computer/<agent-name>/slave-agent.jnlp</pre>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contribute">
+        <div class="content-container">
+            <h2>Contribute to Jenkins Remoting</h2>
+            <p>The Jenkins Remoting project is open-source, and we welcome contributions. You can help by:</p>
+            <ul>
+                <li>Reporting bugs or suggesting new features</li>
+                <li>Submitting pull requests on the GitHub repository</li>
+                <li>Joining the Jenkins community to discuss and collaborate on future development</li>
+            </ul>
+            <p>For more information on contributing, please visit the <a href="https://github.com/jenkinsci/remoting" target="_blank">GitHub Repository</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Jenkins Remoting Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
