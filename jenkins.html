@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jenkins Remoting Project - Remote Communication for Jenkins">
+    <title>Jenkins Remoting Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Jenkins Remoting Project</h1>
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>The Jenkins Remoting project provides a remote communication mechanism that allows Jenkins agents to communicate with the master. It is an integral part of Jenkins' distributed build system, enabling data exchange and command execution over a network.</p>
+        <p>Jenkins Remoting is designed to be lightweight and provide fast communication to enable efficient operation in Jenkins clusters.</p>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Cross-platform support (Windows, macOS, Linux)</li>
+            <li>Secure communication using encrypted channels</li>
+            <li>Efficient serialization and deserialization of objects</li>
+            <li>Lightweight architecture for low resource usage</li>
+            <li>Automatic reconnection and retry in case of failure</li>
+        </ul>
+    </section>
+
+    <section id="installation">
+        <h2>Installation</h2>
+        <p>To install Jenkins Remoting, you can use the following steps:</p>
+        <pre>
+# Download and install Jenkins Remoting JAR
+wget https://repo.jenkins-ci.org/releases/org/jenkins-ci/main/remoting/4.15/remoting-4.15.jar
+
+# Run the agent with the master
+java -jar remoting-4.15.jar -jnlpUrl http://<your-jenkins-server>/computer/<agent-name>/slave-agent.jnlp
+        </pre>
+        <p>Make sure your Jenkins master is running and you have the appropriate permissions to add agents to the system.</p>
+    </section>
+
+    <section id="usage">
+        <h2>Usage</h2>
+        <p>Once Jenkins Remoting is installed, it automatically handles communication between Jenkins agents and the master. Agents can be used to run build jobs remotely, improving scalability and efficiency in large Jenkins environments.</p>
+    </section>
+
+    <section id="documentation">
+        <h2>Documentation</h2>
+        <p>For more details on configuration and advanced usage, refer to the <a href="https://www.jenkins.io/doc/book/using/remote-build-agents/">official Jenkins documentation</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Jenkins Remoting Project</p>
+</footer>
+
+</body>
+</html>
